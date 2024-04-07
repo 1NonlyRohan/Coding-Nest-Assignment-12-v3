@@ -6,6 +6,7 @@
     list-style: none;
     font-size: 16px;
     font-family: math;
+    outline: 0;
 }
 
 .head h2 a {
@@ -40,4 +41,85 @@ button {
 
 button a {
     color: white;
+}
+
+main img {
+    position: absolute;
+    margin: 50px 0 0 700px;
+    height: 580px;
+}
+
+.main-content h1 {
+    font-family: math;
+    margin: 70px 0px 0px 80px;
+    display: inline-block;
+    font-size: 50px;
+}
+
+.main-content p {
+    color: rgb(157, 157, 157);
+    margin: 10px 0px 0px 80px;
+    font-size: 20px;
+}
+
+.form #f-n-label{
+    padding: 20px 0px 0px 80px;
+    display: block;
+}
+
+#f-name {
+    margin: 0px 0px 0px 80px;
+    border-radius: 3px;
+    border: 1px solid #c7c5c5;
+    padding: 8px;
+}
+
+#l-name {
+    margin: 0px 0px 0px 35px;
+    border-radius: 3px;
+    border: 1px solid #c7c5c5;
+    padding: 8px;
+}
+
+.form #l-n-label {
+    display: block;
+    margin: 20px 0px 0px 350px;
+    position: absolute;
+}
+
+.form #e-mail-label {
+    display: block;
+    margin: 20px 0px 5px 80px;
+}
+
+#e-mail {
+    position: absolute;
+    margin: 0px 0px 0px 80px;
+    border-radius: 3px;
+    border: 1px solid #c7c5c5;
+    padding: 8px;
+    width: 520px;
+}
+
+#msg-label {
+    display: block;
+    margin: 50px 0px 0px 80px;
+    position: absolute;
+}
+
+#txt-area {
+    margin: 80px 0px 0px 80px;
+    position: absolute;
+    width: 520px;
+    padding: 10px;
+    border: 1px solid #c7c5c5;
+}
+
+.form-btn button{
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    width: 520px;
+    border-radius: 5px;
+    margin: 300px 0px 0px 80px;
 }

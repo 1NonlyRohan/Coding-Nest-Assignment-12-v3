@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CodingNest-Assignment-12-v2</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -20,14 +21,14 @@
             border-bottom: 1px solid black;
             margin: 280px 100px 40px 100px;
         } */
-
     </style>
 
 </head>
-<body>
-     <!-- creating header portion -->
 
-     <header class="head">
+<body>
+    <!-- creating header portion -->
+
+    <header class="head">
         <h2>
             <a href="#">Coding<span>Nest</span></a>
         </h2>
@@ -39,9 +40,40 @@
                 <button type="submit"><a href="#">Contact</a></button>
             </ul>
         </nav>
-        
+
     </header>
 
     <!-- header portion End -->
+
+    <!-- Starting Mid Section -->
+
+    <main>
+        <img src="image/image.PNG" alt="image">
+        <div class="main-content">
+            <h1>Contact us</h1>
+            <p>Subheading for description or instruction</p>
+        </div>
+        <form action="#" class="form">
+
+            <label for="f-name" id="l-n-label">Last Name</label>
+            <label for="f-name" id="f-n-label">First Name</label>
+            
+            <input type="text" name="f-name" id="f-name" placeholder="jane" required>
+            <input type="text" name="f-name" id="l-name" placeholder="Smitherton" required>
+
+            <label for="e-mail" id="e-mail-label">E-Mail</label>
+            <input type="text" name="e-mail" id="e-mail" placeholder="email@janesfakedomain.net" required>
+
+            <label for="message" id="msg-label">Your Message</label>
+            <textarea name="message" id="txt-area" cols="30" rows="10">Enter your question or message</textarea>
+
+            <div class="form-btn">
+                <button type="submit"><a href="#">Submit</a></button>
+            </div>
+
+        </form>
+    </main>
+
 </body>
+
 </html>
