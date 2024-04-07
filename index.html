@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodingNest-Assignment-12-v2</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         a span {
@@ -14,13 +15,29 @@
         }
 
         .head h2 {
-            margin: 40px;
+            margin: 40px 40px 40px 85px;
         }
 
-        /* .b-b {
-            border-bottom: 1px solid black;
-            margin: 280px 100px 40px 100px;
-        } */
+        .b-b {
+            border-bottom: 2px solid #cbc7c7;
+            margin: 450px 120px 40px 50px;
+        }
+
+        table {
+            width: 80%;
+        }
+
+        table tr th {
+            font-weight: 900;
+            font-size: 28px;
+        }
+
+        table td {
+            padding: 30px 10px 10px 55px;
+            margin: 0px 0px 0px 0px;
+            cursor: pointer;
+            font-size: 20px;
+        }
     </style>
 
 </head>
@@ -57,7 +74,7 @@
 
             <label for="f-name" id="l-n-label">Last Name</label>
             <label for="f-name" id="f-n-label">First Name</label>
-            
+
             <input type="text" name="f-name" id="f-name" placeholder="jane" required>
             <input type="text" name="f-name" id="l-name" placeholder="Smitherton" required>
 
@@ -65,7 +82,8 @@
             <input type="text" name="e-mail" id="e-mail" placeholder="email@janesfakedomain.net" required>
 
             <label for="message" id="msg-label">Your Message</label>
-            <textarea name="message" id="txt-area" cols="30" rows="10">Enter your question or message</textarea>
+            <textarea name="message" id="txt-area" cols="30" rows="10"
+                placeholder="Enter your question or message"></textarea>
 
             <div class="form-btn">
                 <button type="submit"><a href="#">Submit</a></button>
@@ -73,6 +91,52 @@
 
         </form>
     </main>
+
+    <!-- Ending Mid Content -->
+
+    <!-- creating footer with social links -->
+
+    <div class="b-b"></div>
+
+    <footer class="foot">
+        <a href="#">
+            <h1>Coding<span>Nest</span></h1>
+        </a>
+
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook fa-xl" title="fb" alt="fb"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fa-xl" title="in" alt="in"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-xl" title="yt" alt="yt"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-xl" title="instagram" alt="instagram"></i></a>
+        </div>
+
+        <div class="topic-page">
+            <table>
+                <tr>
+                    <th>Topic</th>
+                    <th>Topic</th>
+                    <th>Topic</th>
+                </tr>
+                <tr>
+                    <td>Page</td>
+                    <td>Page</td>
+                    <td>Page</td>
+                </tr>
+                <tr>
+                    <td>Page</td>
+                    <td>Page</td>
+                    <td>Page</td>
+                </tr>
+                <tr>
+                    <td>Page</td>
+                    <td>Page</td>
+                    <td>Page</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+    <!-- Ending footer with social links -->
 
 </body>
 
