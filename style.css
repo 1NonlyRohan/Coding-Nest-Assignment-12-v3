@@ -21,8 +21,6 @@ button {
     cursor: pointer;
 }
 
-/* Header styles */
-
 header {
     background-color: #fff;
     padding: 1rem 2rem;
@@ -60,11 +58,6 @@ nav {
     font-size: 1rem;
     color: black;
     padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: white;
 }
 
 .contact-btn {
@@ -75,34 +68,11 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-/* Menu Area */
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    font-size: 1.8rem;
-}
-
-.menu-icon span {
-    display: block;
-    height: 3px;
-    width: 25px;
-    background-color: black;
-    margin: 5px 0;
-}
-
 .nav-links {
-    transition: right 0.5s ease;
-    position: absolute;
-    top: 70px;
-    right: -100vw;
-    width: 100%;
-    height: 100vh;
     background-color: white;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-active {
@@ -112,8 +82,6 @@ nav {
 .nav-links li {
     margin: 1.5rem 0;
 }
-
-/* Contact Container */
 
 .contact-container {
     display: flex;
@@ -191,7 +159,6 @@ button[type="submit"]:hover {
     border-radius: 10px;
 }
 
-/* Footer Area */
 
 footer {
     background-color: #fff;
@@ -280,4 +247,79 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .logo{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    nav.nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 100;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-topics {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .footer-social {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .footer-logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-topics h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-social img {
+        width: 30px;
+        height: 30px;
+    }
 }
